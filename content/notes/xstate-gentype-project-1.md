@@ -24,94 +24,93 @@ export const matches = (state, path: Paths) => state.matches(path);
 
 [Implemented](https://github.com/MrNovado/xstate-gentype-proof/blob/master/gentype/simple.gentype.js#L40) using promises (service-actors).
 
-
 ```json
 {
-    context: { schemaJson: null, moduleParts: [] },
-    initial: "parsingSchema",
-    states: {
-        parsingSchema: {
-            invoke: {
-                src: "parseSchemaFile",
-                onDone: {
-                    target: "generatingMachineModule",
-                    actions: "saveSchema",
-                },
-                onError: { target: "#finallizing", actions: "logError" },
-            },
+  "context": { "schemaJson": null, "moduleParts": [] },
+  "initial": "parsingSchema",
+  "states": {
+    "parsingSchema": {
+      "invoke": {
+        "src": "parseSchemaFile",
+        "onDone": {
+          "target": "generatingMachineModule",
+          "actions": "saveSchema"
         },
-        generatingMachineModule: {
-            context: {
-                paths: [],
-                state2Event: null,
-                events: [],
-                options: null,
-            },
-            initial: "generatingStateCombinations",
-            states: {
-                generatingStateCombinations: {
-                    invoke: {
-                        src: "generateStateCombinations",
-                        onDone: {
-                            target: "generatingState2EventMap",
-                            actions: "saveCombos",
-                        },
-                        onError: {
-                            target: "#finallizing",
-                            actions: "logError",
-                        },
-                    },
-                },
-                generatingState2EventMap: {
-                    invoke: {
-                        src: "generateEventTools",
-                        onDone: {
-                            target: "generatingMachineOptions",
-                            actions: "saveEvents",
-                        },
-                        onError: {
-                            target: "#finallizing",
-                            actions: "logError",
-                        },
-                    },
-                },
-                generatingMachineOptions: {
-                    invoke: {
-                        src: "generateMachineOptions",
-                        onDone: {
-                            target: "generatingModuleParts",
-                            actions: "saveOptions",
-                        },
-                        onError: {
-                            target: "#finallizing",
-                            actions: "logError",
-                        },
-                    },
-                },
-                generatingModuleParts: {
-                    invoke: {
-                        src: "generateMachineModule",
-                        onDone: {
-                            target: "#writingMachineModule",
-                            actions: "saveModule",
-                        },
-                        onError: {
-                            target: "#finallizing",
-                            actions: "logError",
-                        },
-                    },
-                },
-            },
-        },
-        writingMachineModule: {
-            id: "writingMachineModule",
-            invoke: {
-                src: "writeMachineModule",
-                onDone: "#finallizing",
-                onError: { target: "#finallizing", actions: "logError" },
-            },
-        },
-        finallizing: { id: "finallizing", type: "final" },
+        "onError": { "target": "#finallizing", "actions": "logError" }
+      }
     },
+    "generatingMachineModule": {
+      "context": {
+        "paths": [],
+        "state2Event": null,
+        "events": [],
+        "options": null
+      },
+      "initial": "generatingStateCombinations",
+      "states": {
+        "generatingStateCombinations": {
+          "invoke": {
+            "src": "generateStateCombinations",
+            "onDone": {
+              "target": "generatingState2EventMap",
+              "actions": "saveCombos"
+            },
+            "onError": {
+              "target": "#finallizing",
+              "actions": "logError"
+            }
+          }
+        },
+        "generatingState2EventMap": {
+          "invoke": {
+            "src": "generateEventTools",
+            "onDone": {
+              "target": "generatingMachineOptions",
+              "actions": "saveEvents"
+            },
+            "onError": {
+              "target": "#finallizing",
+              "actions": "logError"
+            }
+          }
+        },
+        "generatingMachineOptions": {
+          "invoke": {
+            "src": "generateMachineOptions",
+            "onDone": {
+              "target": "generatingModuleParts",
+              "actions": "saveOptions"
+            },
+            "onError": {
+              "target": "#finallizing",
+              "actions": "logError"
+            }
+          }
+        },
+        "generatingModuleParts": {
+          "invoke": {
+            "src": "generateMachineModule",
+            "onDone": {
+              "target": "#writingMachineModule",
+              "actions": "saveModule"
+            },
+            "onError": {
+              "target": "#finallizing",
+              "actions": "logError"
+            }
+          }
+        }
+      }
+    },
+    "writingMachineModule": {
+      "id": "writingMachineModule",
+      "invoke": {
+        "src": "writeMachineModule",
+        "onDone": "#finallizing",
+        "onError": { "target": "#finallizing", "actions": "logError" }
+      }
+    },
+    "finallizing": { "id": "finallizing", "type": "final" }
+  }
 }
 ```
