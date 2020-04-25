@@ -70,6 +70,7 @@ module.exports = {
         icon: `src/assets/favicon.png`
       }
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-sitemap`
     },
