@@ -64,8 +64,8 @@ module.exports = {
         name: `Alex Vlad`,
         short_name: `Alex Vlad`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#3a5f7d`,
+        background_color: `#0e0f17`,
+        theme_color: `#0e0f17`,
         display: `standalone`,
         icon: `src/assets/favicon.png`
       }
