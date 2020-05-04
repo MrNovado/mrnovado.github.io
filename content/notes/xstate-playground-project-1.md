@@ -1,6 +1,6 @@
 ---
-date: 2020-25-04
-tags: ['project', 'actor-model', 'xstate', 'code']
+date: 2020-04-25
+tags: [project, actor-model, xstate, code, demo]
 ---
 
 # [xstate-playground](https://github.com/MrNovado/xstate-playground)

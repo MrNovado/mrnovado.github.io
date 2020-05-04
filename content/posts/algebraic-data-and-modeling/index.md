@@ -2,7 +2,7 @@
 title: Algebraic data
 date: "2019-03-28T11:41:22.269Z"
 category: programming
-tags: [code]
+tags: [code, showerthoughts]
 description: Type variant and the road to happiness; algebraic data to the rescue.
 ---
 

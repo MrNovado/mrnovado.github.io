@@ -2,7 +2,7 @@
 title: Cohesion. With Bob Ross - part 1
 date: "2019-03-24T11:54:58.632Z"
 category: general
-tags: [wtfcohesion]
+tags: [showerthoughts]
 description: So, what is cohesion anyway? Preferably with examples, art, and Bob Ross.
 ---
 

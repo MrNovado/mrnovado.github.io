@@ -2,7 +2,7 @@
 title: What we can learn from Minecraft in 2019 - part 1
 date: "2019-03-12T15:37:39.038Z"
 category: gamedesign
-tags: [wtfcohesion]
+tags: [showerthoughts]
 description: Thousands of mods and the way they are glued together, impressive sandbox to see cohesion in action and understand it better.
 ---
 

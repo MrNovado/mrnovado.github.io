@@ -1,6 +1,6 @@
 ---
-date: 2020-26-04
-tags: ['project', 'actor-model', 'xstate', 'code']
+date: 2020-04-26
+tags: [project, actor-model, xstate, code]
 ---
 
 # [xstate-gentype-proof](https://github.com/MrNovado/xstate-gentype-proof)
