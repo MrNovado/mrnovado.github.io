@@ -16,6 +16,8 @@ I consider myself a **Web-front-end** dev, though I did a lot of mobile stuff as
 
 - I also have a **Ph.D.** ([Candidate of Sciences](https://en.wikipedia.org/wiki/Candidate_of_Sciences) to be exact) in system analysis for researching ways to apply [Web ontologies](https://en.wikipedia.org/wiki/Web_Ontology_Language) (specifically **[RDF](https://en.wikipedia.org/wiki/RDF_Schema)** and **[OWL DL](https://en.wikipedia.org/wiki/Web_Ontology_Language#OWL_DL)**) to build Web applications.
 
+- I've also crushed into [xstate](https://github.com/davidkpiano/xstate) and statecharts recently in a big way.
+
 ## TL;DR - story
 
 Most projects are under **NDA**, so the story would be presented in somewhat broad terms.
@@ -28,7 +30,11 @@ Most projects are under **NDA**, so the story would be presented in somewhat bro
 
 - **LTD Andersen** as a Web-dev from July 2018 to February 2019. Decided Web/hybrid development is my thing; wanted to **relocate**; wanted to gain perspective in what bigger businesses are doing; wanted to work in a **product-oriented company**. Unfortunately, while I certainly gained a lot of experience working with huge **React** + **Redux** and even **Elm** apps (which is super cool, by the way), I've learned I do not particularly like doing outsource.
 
-## Story - part 1 (manager)
+- 2019-2020 working for some government agencies. Very frustrating time, but also revelating as I've stumbled upon **xstate** and statecharts and there's no going back now!
+
+---
+
+# Story - part 1 (manager)
 
 I actually started as a _project manager_ for a **small Web-studio** at my hometown in 2012. We had 2 full-time devs, 1 designer, a freelance content-manager and about ~40 ongoing projects in different stages of completion. So, very early on I found myself neck-deep in code trying to debug and resolve hot-issues for our clients in an attempt to clear some room for devs, so they could focus on actually building new stuff instead of drowning in legacy.
 
@@ -46,7 +52,9 @@ At some point, the studio hired a SEO specialist and things became even more ove
 
 Devs do get it all easy: no angry phone calls all the time; mesmerizing, steady workflow; feeling of accomplishment when a project is done instead of constant fear of getting an angry phone call for whatever reason, etc.
 
-## Story - part 2 (pureJS)
+---
+
+# Story - part 2 (pureJS)
 
 I relocated. I decided to try out Web-development as a dev this time. I was hired by **JSC Prognoz**, a business analytics company, and worked there from September 2013 to May 2015 as a junior front-end dev.
 
@@ -64,7 +72,9 @@ Working with other departments I had an opportunity to tinker with KnockoutJS, A
 
 The company wasn't doing so well at the time; I wanted to be able to make my own apps/solutions from start to finish, -- so I decided to move on.
 
-## Story - part 3 (Android and React)
+---
+
+# Story - part 3 (Android and React)
 
 To check out an Android development. Hired by **LTD Maugry** as a junior-Android/Web dev from November 2015 to March 2018.
 
@@ -128,7 +138,9 @@ At a certain point, I had a major disagreement with our management with how the 
 
 Looking back at it, I think working at Maugry was the most interesting and most gratifying experience overall. Thank you, fellas, you are cool.
 
-## Story - part 4 (React, Redux, Elm)
+---
+
+# Story - part 4 (React, Redux, Elm)
 
 I relocated again. I was heavily researching React and everything around it, trying to understand what made it such a great tool. I was also peeking into Elm.
 
@@ -167,3 +179,13 @@ Unfortunately, while working with huge **React + Redux** and **Elm** apps is sup
 ## So what's next?
 
 Today I'm still very interested in React, especially in its new core feature -- React hooks; I'm interested in Elm and Elm/React-like solutions (ReasonML-React); I'm interested in hybrid cross-platform containers like PWA, or frameworks like ReactNative. I'm somewhat intrigued by Elixir. I'm researching functional stuff.
+
+---
+
+# UPD: Story - part 5 (xstate)
+
+There's a lot to tell about government agencies and their contractors, and how they work, and motivations behind what and how they do their stuff, but... suffice to say, working with them is probably the most frustrating experience I've ever had. Period. Please, never again.
+
+On the more positive note, I've found a new crush: **xstate** and statecharts. It is probably **the** missing link between functional and component-based programming. It allows for completely independent, completely decoupled state-management. Agent-model is awesome even if a very old concept, but the implementation is what's important here. Before **xstate** there was nothing even comparably comprehensive on the web-market. The most notable implementations are java's **AKKA** and of course **Erlang** (BEAM platform and languages). But the web had almost nothing of the sort, and now it has **xstate**. There's also **robot**, but it doesn't look like it has the momentum to propel itself to become popular.
+
+The missing thing here for the web-platform is threads. Even though we have workers -- they are not good enough (yet?) to be used to dynamically delegate a lot of work to them. So CPU-resource-management is not gonna be a thing for now for the web development. But, at some point...?
