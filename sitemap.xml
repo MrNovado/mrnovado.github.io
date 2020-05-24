@@ -3,10 +3,13 @@
 <url> <loc>https://mrnovado.github.io/tags/link/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/tags/code/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/tags/actor-model/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://mrnovado.github.io/tags/video/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/tags/project/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/tags/xstate/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/tags/demo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/tags/showerthoughts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://mrnovado.github.io/links/redux-is-half-pattern/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://mrnovado.github.io/links/event-loop-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/links/reasonml-xstate-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/notes/xstate-gentype-project-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/notes/xstate-playground-project-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -14,8 +17,8 @@
 <url> <loc>https://mrnovado.github.io/cohesion/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/minecraft-cohesion-and-scaling/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://mrnovado.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/feed/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://mrnovado.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/projects/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://mrnovado.github.io/cv/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
