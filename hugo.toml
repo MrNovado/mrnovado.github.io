@@ -1,0 +1,9 @@
+baseURL = 'https://mrnovado.github.io/'
+languageCode = 'en-us'
+title = 'Thoughts and prayers'
+theme = 'hugo-bearcub'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

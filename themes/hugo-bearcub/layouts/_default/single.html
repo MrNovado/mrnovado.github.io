@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{ if not .Params.menu }}
+<p class="byline">
+  <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+    {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+  </time>
+</p>
+{{ end }}
+<content>
+  {{ .Content }}
+</content>
+<p>
+  {{ range (.GetTerms "tags") }}
+    <a class="blog-tags" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>
+  {{ end }}
+</p>
+{{ end }}
